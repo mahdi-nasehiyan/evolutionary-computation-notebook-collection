@@ -11,7 +11,7 @@ The goal here, is to simulate the evolution of DarBabies, by implementing the fo
 - Environment
 - Predator
 
-In the world of DarBabies, a DarBaby is more likely to be hunted by the predator, if its color trait makes it more visible to the predator. Hence, the probability of DarBaby $i$ being hunted is proportional to how much its color is similar to the environment's color.
+In the world of DarBabies, a DarBaby is more likely to be hunted by the predator, if its color trait makes it more visible to the predator. Hence, the probability of DarBaby $i$ being hunted is proportional to how much its color is different from the environment's color.
 
 $p_{prey_i}$: Probability of DarBaby $i$ to be hunted  
 $C_{env}$: Environment color  
@@ -35,7 +35,7 @@ As mentioned before, the fitness of a DarBaby in the environment can be formulat
 $$f(DarBaby_i)=255-|C_{env}-C_{i}|$$
 > Note that the fitness function is not explicitly implemented and used in the simulation, we rather use it implicitly in the predator's hunt tactic. We measure and track the average fitness value of the population to show the emergence of evolution.
 
-## Expreminets and Results
+## Experiments and Results
 We run the simulation with different parameters and analyze the results.  
 The parameters under investigation are:
 - **n_babies**: The number of DarBabies in each generation
