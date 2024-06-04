@@ -7,13 +7,12 @@ In this exercise, we will implement and test a basic evolutionary strategies (ES
 ## Formulation
 An instance of ES, will optimize an objective function $f(x)$ with respect to $x \in R^n$, over a given domain $D_x$ ($x_i \in D_x$), using an arbitrary mutation rate $\sigma$.
 
-Mathematically, ES can be summarized in the following equation:
-$$X_{t+1}=
-\begin{cases}
-    X_t + \sigma Z_t & \text {if } f(X_t + \sigma Z_t) \leq f(X_t)\\
-    X_t & \text {otherwise}
-\end{cases}$$
-
+Mathematically, ES can be summarized in the following equation:  
+if $f(X_t + \sigma Z_t) \leq f(X_t)$:
+$$X_{t+1}=X_t + \sigma Z_t$$
+otherwise:
+$$X_{t+1}=X_t$$
+Where:
 $$Z \sim N(0, 1)$$
 $$Z \in R^n$$
 $$\sigma > 0$$
