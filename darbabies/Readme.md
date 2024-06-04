@@ -1,4 +1,4 @@
-# DarBaby Evolution - A Simple HelloWorld to Evoluationary Computation
+# DarBaby Evolution - A Simple HelloWorld to Evolutionary Computation
 
 > This notebook is an implementation based on [this](https://www.youtube.com/watch?v=JkAKtrZo4j0) video created by [cassiopeiaproject](https://www.youtube.com/@cassiopeiaproject)
 
@@ -64,6 +64,7 @@ Within the first 20 generations, DarBabies that perfectly match the background c
     Best DarBaby=DarBaby[genome=00000000][color=0]
 
 ![](images/e2.png)
+
 The result is similar to the previous simulation. Very soon, DarBabies that match the background color appear, and a form of convergence occurs. This means that the average color of the population gets close to the background color but never quite reaches it. The fluctuation in the average color of the population continues until the end of the simulation because the factors causing the fluctuation, as mentioned earlier, persist throughout the simulation.
 ### Experiment 3
     n_babies=32
@@ -73,6 +74,7 @@ The result is similar to the previous simulation. Very soon, DarBabies that matc
     Best DarBaby=DarBaby[genome=00000000][color=0]
 
 ![](images/e3.png)
+
 Increasing the percentage of the population that randomly perishes causes an increase in the amplitude and period of the fluctuations in the average color of the population. It is also evident that, at times, due to the random elimination of DarBabies that match the environment (along with other factors such as mutation), there are no DarBabies matching the background color in the next generation. In such cases, even the best DarBaby of that generation has a color significantly different from the background.
 ### Experiment 4
     n_babies=32
@@ -82,4 +84,5 @@ Increasing the percentage of the population that randomly perishes causes an inc
     Best DarBaby=DarBaby[genome=00000000][color=0]
 
 ![](images/e4.png)
+
 Here, we have completely disabled the random deaths of DarBabies. Now, in each generation, precisely half of the population that is better adapted survives and reproduces. This significantly reduces the fluctuations in the color of the DarBabies. The only factor causing fluctuations here is mutation. Additionally, without random deaths, DarBabies that match the background color emerge much faster compared to previous simulations.
