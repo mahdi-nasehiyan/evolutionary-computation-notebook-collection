@@ -5,3 +5,4 @@ A collection of evolutionary computation jupyter notebooks that include implemen
 The collection includes notebooks for the following examples:
 1. DarBabies: An introductory example to evolutionary computation
 2. Canonical ES (Evolution Strategies)
+3. Solving Job-Shop Scheduling Problem (JSSP) using Genetic Algorithm
