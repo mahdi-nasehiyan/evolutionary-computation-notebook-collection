@@ -69,11 +69,11 @@ Each generation consists of 200 individuals, with 100 parents considered for eac
 The benchmark instance discussed earlier was used to test the implemented method.
 > To ensure reproducibility, a random initial population is created and saved in a text file (initial.txt). Use the file along with the pre-set random_seed in the notebook.
 
-The results obtained from running the genetic algorithm for 500 generations:
+The results obtained from running the genetic algorithm for 500 generations:  
 **Makespan of global best solution: $960$**
 
-![Generation vs. Fitness](images/fitness.png)
+![Generation vs. Fitness](images/fitness.png)  
 *Generation vs. Fitness*
 
-![Gantt chart of the best solution](images/gantt.png)
+![Gantt chart of the best solution](images/gantt.png)  
 *Gantt chart of the best solution*
