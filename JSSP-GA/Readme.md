@@ -71,6 +71,7 @@ The benchmark instance discussed earlier was used to test the implemented method
 
 The results obtained from running the genetic algorithm for 500 generations:
 **Makespan of global best solution: $960$**
+
 ![Generation vs. Fitness](images/fitness.png)
 *Generation vs. Fitness*
 
